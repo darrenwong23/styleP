@@ -48,12 +48,12 @@ var boxCreate = function(i) {
 			else image += "<div class=slide><img src='" + imgArr[i]['image'] + "' ></div>"  ;
 		}
 
-		var dots = "<a href='#' class='arrow-prev'><img src='arrow-prev.png'></a>";
+		var dots = "<a href='#' class='arrow-prev'><img src='../img/arrow-prev.png'></a>";
 		dots += '<ul class="slider-dots"><li class="dot active-dot">&bull;</li>'
 		for(var i = 1; i< imgArr.length; i++) {
 			dots += '<li class="dot">&bull;</li>' ;
 		}
-		dots += "</ul><a href='#' class='arrow-next'><img src='arrow-next.png'></a>";
+		dots += "</ul><a href='#' class='arrow-next'><img src='../img/arrow-next.png'></a>";
 		return "<div class=slider>"+ image +"</div>" + "<div class='slider-nav'>" + dots + "</div>";
 	}
 
